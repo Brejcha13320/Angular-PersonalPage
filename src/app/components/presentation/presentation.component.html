@@ -1,0 +1,19 @@
+<div class="bg-neutral-900" id="profile">
+  <div class="max-w-5xl mx-auto px-4 xl:px-0 pt-24 lg:pt-32 pb-24">
+    <h1 class="font-semibold text-[#ff0] text-5xl pb-5 md:text-6xl">
+      {{ name }}
+    </h1>
+
+    @for (carrer of carrers; track carrer) {
+    <h1 class="font-semibold text-white text-4xl md:text-4xl">
+      {{ carrer }}
+    </h1>
+    }
+
+    <div class="max-w-4xl">
+      <p class="mt-5 text-neutral-400 text-lg text-justify">
+        {{ presentation }}
+      </p>
+    </div>
+  </div>
+</div>
