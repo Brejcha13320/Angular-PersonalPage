@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { NavbarOption } from '@interfaces/navbar.interface';
+import { SubMenuNavbar } from '../../interfaces/navbar.interface';
 
 @Component({
   selector: 'app-navbar',
@@ -27,13 +28,23 @@ export class NavbarComponent {
       name: 'Empleos',
       fragment: 'jobs',
     },
-    {
-      name: 'Certificaciones',
-      fragment: 'certifications',
-    },
-    {
-      name: 'CV',
-      fragment: '',
-    },
   ];
+
+  subMenuNavbar: SubMenuNavbar = {
+    name: 'Acerca de Mi',
+    items: [
+      {
+        name: 'Estudios',
+        fragment: 'studies',
+      },
+      {
+        name: 'Certificaciones',
+        fragment: 'certifications',
+      },
+      {
+        name: 'Hoja de Vida',
+        fragment: 'cv',
+      },
+    ],
+  };
 }

@@ -10,6 +10,8 @@ import { ProjectsComponent } from '@components/projects/projects.component';
 import { ReviewsComponent } from '@components/reviews/reviews.component';
 import { StatsComponent } from '@components/stats/stats.component';
 import { ContactService } from '../../services/contact.service';
+import { StudiesComponent } from '@components/studies/studies.component';
+import { CvComponent } from '@components/cv/cv.component';
 
 @Component({
   standalone: true,
@@ -20,7 +22,9 @@ import { ContactService } from '../../services/contact.service';
     ReviewsComponent,
     StatsComponent,
     JobsComponent,
+    StudiesComponent,
     CertificationsComponent,
+    CvComponent,
     ContactComponent,
     FooterComponent,
   ],
