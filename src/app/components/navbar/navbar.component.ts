@@ -20,12 +20,16 @@ export class NavbarComponent {
       fragment: 'projects',
     },
     {
+      name: 'Trayectoria',
+      fragment: 'trajectory',
+    },
+    {
       name: 'Empleos',
-      fragment: '',
+      fragment: 'jobs',
     },
     {
       name: 'Certificaciones',
-      fragment: '',
+      fragment: 'certifications',
     },
     {
       name: 'CV',

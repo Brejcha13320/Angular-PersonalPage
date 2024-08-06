@@ -58,7 +58,7 @@ export class ProjectsComponent {
       },
     },
     {
-      image: '',
+      image: 'assets/images/angular-xlsx.png',
       title: 'Angular XLSX',
       description:
         'Aplicación Angular que integra la librería XLSX para realizar operaciones avanzadas con archivos Excel. Ofrece ejemplos prácticos de cómo leer, escribir y crear contenido en Excel, así como convertir datos a y desde HTML. Ideal para desarrollar funcionalidades robustas para la gestión de datos en formatos Excel.',
@@ -117,6 +117,17 @@ export class ProjectsComponent {
       link: {
         label: 'Mas Información',
         url: 'https://colduty.com/',
+      },
+    },
+    {
+      image: '',
+      title: 'Repositorio de Github',
+      description:
+        'Aplicación que integra Mapbox para ofrecer funcionalidades avanzadas de mapas. Permite realizar búsquedas, trazar rutas y personalizar la visualización de mapas. Ideal para desarrollar soluciones interactivas y eficientes para la gestión de ubicaciones y navegación.',
+      technologies: ['Angular', 'Mapbox', 'Bootstrap', 'Github Actions'],
+      link: {
+        label: 'Mas Información',
+        url: 'https://github.com/Brejcha13320?tab=repositories',
       },
     },
   ];
