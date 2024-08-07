@@ -7,10 +7,9 @@ import {
   ActivatedRoute,
   RouterModule,
 } from '@angular/router';
-
 import { register } from 'swiper/element/bundle';
-
 import { IStaticMethods } from 'preline/preline';
+import AOS from 'aos';
 
 declare global {
   interface Window {
@@ -48,6 +47,12 @@ export class AppComponent implements OnInit {
           element.scrollIntoView({ behavior: 'smooth' });
         }
       }
+    });
+
+    //AOS Init
+    AOS.init({
+      duration: 1500,
+      delay: 500,
     });
   }
 }

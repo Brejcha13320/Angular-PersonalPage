@@ -16,7 +16,7 @@ export class ProjectsComponent {
 
   projects: Project[] = [
     {
-      image: '',
+      image: 'assets/images/plattaforma.jpg',
       title: 'Plattaforma',
       description:
         'El software que te permite optimizar tus procesos y obtener mayor productividad. Administra tus procesos de forma integral y efectiva, crea tus proyectos y vincúlate con empresas certificadas. Mediante procesos de licitaciones y cotizaciones entre diferentes compañias',
@@ -27,7 +27,7 @@ export class ProjectsComponent {
       },
     },
     {
-      image: '',
+      image: 'assets/images/colduty.png',
       title: 'Colduty',
       description:
         'Es una herramienta completa ( o solución tributaria ) creada para facilitar y agilizar el trabajo de los contadores. Crea declaraciones de renta para tus empresas, despreocúpate de tablas de Excel inmanejables y gestiona los anexos fácilmente. ',
@@ -47,29 +47,29 @@ export class ProjectsComponent {
       },
     },
     {
-      image: '',
+      image: 'assets/images/egema.jpg',
       title: 'Proyecto Egema',
       description:
         'Este software está diseñado para gestionar y optimizar los procesos de Trabajo de Grado y Prácticas Profesionales en la Unidad Central del Valle del Cauca. Facilitando la planificación, seguimiento y evaluación de estos procesos académicos.',
       technologies: ['Angular', 'NodeJS', 'MySQL', 'Docker', 'SCSS', 'GitHub'],
       link: {
         label: 'Mas Información',
-        url: 'https://colduty.com/',
+        url: 'https://github.com/Brejcha13320/Angular-EgemaProject',
       },
     },
     {
-      image: 'assets/images/angular-xlsx.png',
+      image: 'assets/images/angular-xlsx.jpg',
       title: 'Angular XLSX',
       description:
         'Aplicación Angular que integra la librería XLSX para realizar operaciones avanzadas con archivos Excel. Ofrece ejemplos prácticos de cómo leer, escribir y crear contenido en Excel, así como convertir datos a y desde HTML. Ideal para desarrollar funcionalidades robustas para la gestión de datos en formatos Excel.',
       technologies: ['Angular', 'XLSX', 'SCSS'],
       link: {
         label: 'Mas Información',
-        url: 'https://colduty.com/',
+        url: '',
       },
     },
     {
-      image: '',
+      image: 'assets/images/nodejs-jest.jpg',
       title: 'NodeJS Testing RDB',
       description:
         'Guía para realizar pruebas en aplicaciones Node.js con Prisma ORM y MySQL, utilizando Jest. Incluye estrategias para pruebas unitarias e integrales, además de prácticas para integrar CI/CD para automatizar el proceso de pruebas y despliegue.',
@@ -85,42 +85,22 @@ export class ProjectsComponent {
       ],
       link: {
         label: 'Mas Información',
-        url: 'https://colduty.com/',
+        url: 'https://github.com/Brejcha13320/Node-Testing-Postgres-Unit-E2E',
       },
     },
     {
-      image: '',
-      title: 'NodeJS Testing Mongo',
-      description:
-        'Guía para realizar pruebas en aplicaciones Node.js con Prisma ORM y MongoDB, utilizando Jest. Cubre estrategias para pruebas unitarias e integrales, y proporciona prácticas para integrar CI/CD, facilitando la automatización del proceso de pruebas y despliegue.',
-      technologies: [
-        'NodeJS',
-        'Express',
-        'Jest',
-        'MongoDB',
-        'CI/CD',
-        'PrismaORM',
-        'Docker',
-        'Github Actions',
-      ],
-      link: {
-        label: 'Mas Información',
-        url: 'https://colduty.com/',
-      },
-    },
-    {
-      image: '',
+      image: 'assets/images/angular-mapbox.jpg',
       title: 'Angular Mapbox',
       description:
         'Aplicación que integra Mapbox para ofrecer funcionalidades avanzadas de mapas. Permite realizar búsquedas, trazar rutas y personalizar la visualización de mapas. Ideal para desarrollar soluciones interactivas y eficientes para la gestión de ubicaciones y navegación.',
       technologies: ['Angular', 'Mapbox', 'Bootstrap', 'Github Actions'],
       link: {
         label: 'Mas Información',
-        url: 'https://colduty.com/',
+        url: 'https://brejcha13320.github.io/Angular-MapasApp/#/',
       },
     },
     {
-      image: '',
+      image: 'assets/images/github.webp',
       title: 'Repositorio de Github',
       description:
         'Aplicación que integra Mapbox para ofrecer funcionalidades avanzadas de mapas. Permite realizar búsquedas, trazar rutas y personalizar la visualización de mapas. Ideal para desarrollar soluciones interactivas y eficientes para la gestión de ubicaciones y navegación.',
