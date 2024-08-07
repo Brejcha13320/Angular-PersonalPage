@@ -11,8 +11,8 @@ import { Certification } from '@interfaces/certifications.interface';
 })
 export class TableCertificationsComponent {
   @Input() certifications: Certification[] = [];
-  udemyLogo = 'assets/images/udemy-logo.png';
-  platziLogo = 'assets/images/platzi-logo.png';
+  udemyLogo = 'assets/images/logos/udemy.png';
+  platziLogo = 'assets/images/logos/platzi.png';
 
   companyType(company: string) {
     const lowerCompany = company.toLowerCase();
