@@ -16,7 +16,7 @@ export class JobsComponent {
   nodejs: string =
     'Javascript, Typescript, NPM, NVM, Nodemon, Express, Bases de Datos (MySQL, MariaDB, PostgreSQL, MongoDB), ORM (Prisma, Sequealize, etc.), Async/Await, Promesas, Gestión de Archivos, Sistemas de Ruteo, Auth, JWT, Middlewares, Emails, Cron Jobs, Jest, Testing (Unit-Test/Integration-Test/E2E), Encriptación, Seguridad, CORS, Clean Architecture, DDD, DTO, Entidades, CORS, Despliegue, CI/CD, Swagger, Optimización, Rendimiento, Arquitectura de software, Diseño de APIs, Monitorización, Escalabilidad, Aprendizaje Continuo, Adaptabilidad, etc. ';
   springBoot: string =
-    'Java SE, Spring Boot, Spring Framework, Spring Web, Spring Data JPA, DTO, Repository, Services, Crud, Entity, API Rest, HTTP, etc. ';
+    'Java SE, Spring Boot, Spring Framework, Spring Web, Spring Data JPA, JPQL, JDBC, Hibernate, Query, Query Methods, Audition, DTO, Repository, CrudRepository, PageAndSortRepository, Services, Entity, API Rest, HTTP, etc. ';
   devOps: string =
     'CI/CD, Deployment, GitHub Actions, Workflows, Pipelines, Linux, Deployment, Serverless, Railway, Netlify, Bases de Datos en la Nube, Docker, Imagenes, Redes, Volúmenes, Docker File, Multi Stage Build, Multi Container Applications, NGINX, Kubernetes, etc. ';
   aws: string =

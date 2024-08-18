@@ -21,6 +21,35 @@
     </div>
     <!-- End Title -->
 
+    <!-- Skills -->
+    <!-- <ul class="space-y-3 text-sm"> -->
+    <ul class="grid sm:grid-cols-2 gap-4 text-sm mb-10">
+      @for (skill of skills; track $index) {
+      <li class="flex gap-x-3" data-aos="fade-in">
+        <span
+          class="size-5 flex justify-center items-center rounded-full bg-yellow-800/30 text-yellow-500"
+        >
+          <svg
+            class="shrink-0 size-3.5"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <polyline points="20 6 9 17 4 12"></polyline>
+          </svg>
+        </span>
+        <span class="text-white"> {{ skill }} </span>
+      </li>
+      }
+    </ul>
+    <!-- End Skills -->
+
     <!-- Grid -->
     <div class="md:grid md:grid-cols-2 md:gap-10 lg:gap-16 md:items-center">
       <div>
