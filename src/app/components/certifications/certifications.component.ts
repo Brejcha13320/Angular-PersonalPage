@@ -340,6 +340,7 @@ export class CertificationsComponent {
       date: 'Agosto, 2024',
       urlCertification:
         'https://platzi.com/p/Darkreen/curso/7825-course/diploma/detalle/',
+      category: 'java',
     },
   ];
 }
