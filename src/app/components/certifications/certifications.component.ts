@@ -113,7 +113,7 @@ export class CertificationsComponent {
     {
       company: 'Platzi',
       name: 'Curso de TypeScript',
-      date: 'Diciembre, 2022',
+      date: 'Diciembre, 2023',
       urlCertification:
         'https://platzi.com/p/Darkreen/curso/2878-typescript/diploma/detalle/',
       category: 'angular',
@@ -333,6 +333,13 @@ export class CertificationsComponent {
       urlCertification:
         'https://platzi.com/p/Darkreen/curso/7694-course/diploma/detalle/',
       category: 'java',
+    },
+    {
+      company: 'Platzi',
+      name: 'Curso de Java Spring Data JPA: Bases de Datos',
+      date: 'Agosto, 2024',
+      urlCertification:
+        'https://platzi.com/p/Darkreen/curso/7825-course/diploma/detalle/',
     },
   ];
 }
