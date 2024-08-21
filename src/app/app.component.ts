@@ -51,8 +51,8 @@ export class AppComponent implements OnInit {
 
     //AOS Init
     AOS.init({
-      duration: 800,
-      delay: 400,
+      duration: 400,
+      delay: 200,
     });
   }
 }
