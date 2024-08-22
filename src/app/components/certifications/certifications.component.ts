@@ -334,13 +334,5 @@ export class CertificationsComponent {
         'https://platzi.com/p/Darkreen/curso/7694-course/diploma/detalle/',
       category: 'java',
     },
-    {
-      company: 'Platzi',
-      name: 'Curso de Java Spring Data JPA: Bases de Datos',
-      date: 'Agosto, 2024',
-      urlCertification:
-        'https://platzi.com/p/Darkreen/curso/7825-course/diploma/detalle/',
-      category: 'java',
-    },
   ];
 }
