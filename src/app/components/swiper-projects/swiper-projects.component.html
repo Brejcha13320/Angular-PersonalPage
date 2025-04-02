@@ -1,0 +1,35 @@
+<div class="hidden sm:block" data-aos="fade-in">
+  <swiper-container
+    loop="true"
+    navigation="true"
+    clickable="true"
+    [slidesPerView]="2.5"
+    [spaceBetween]="10"
+    [delay]="6000"
+    class="mySwiper"
+  >
+    @for (project of projects; track project) {
+    <swiper-slide>
+      <app-card-project [project]="project"></app-card-project>
+    </swiper-slide>
+    }
+  </swiper-container>
+</div>
+
+<div class="sm:hidden">
+  <swiper-container
+    loop="true"
+    navigation="true"
+    clickable="true"
+    [slidesPerView]="1"
+    [spaceBetween]="10"
+    [delay]="6000"
+    class="mySwiper"
+  >
+    @for (project of projects; track project) {
+    <swiper-slide>
+      <app-card-project [project]="project"></app-card-project>
+    </swiper-slide>
+    }
+  </swiper-container>
+</div>

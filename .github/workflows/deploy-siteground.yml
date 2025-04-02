@@ -1,0 +1,41 @@
+name: Deploy Angular to SiteGround
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 🛎️ Checkout del código
+        uses: actions/checkout@v4
+
+      - name: ⚡ Instalar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: 📦 Instalar dependencias
+        run: |
+          npm install
+          npm install -g @angular/cli
+
+      - name: 🔨 Construir el proyecto Angular
+        run: ng build
+
+      - name: Deploy to SiteGround using rsync
+        run: |
+          echo "$SITEGROUND_SSH_KEY" > private_key
+          chmod 600 private_key
+          rsync -avz -e "ssh -i private_key -o StrictHostKeyChecking=no -p $SITEGROUND_PORT"  \
+          dist/personal-page/browser/ $SITEGROUND_USER@$SITEGROUND_HOST:/home/$SITEGROUND_USER/$SITEGROUND_PATH
+
+        env:
+          SITEGROUND_SSH_KEY: ${{ secrets.SITEGROUND_SSH_KEY }}
+          SITEGROUND_HOST: ${{ secrets.SITEGROUND_HOST }}
+          SITEGROUND_USER: ${{ secrets.SITEGROUND_USER }}
+          SITEGROUND_PORT: ${{ secrets.SITEGROUND_PORT }}
+          SITEGROUND_PATH: ${{ secrets.SITEGROUND_PATH }}

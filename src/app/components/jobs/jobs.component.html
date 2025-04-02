@@ -1,0 +1,62 @@
+<div class="bg-neutral-900" data-aos="fade-in" id="jobs">
+  <!-- Approach -->
+  <div class="max-w-5xl px-4 xl:px-0 py-10 lg:pt-20 mx-auto">
+    <!-- Title -->
+    <div class="mb-10 lg:mb-14">
+      <h2
+        data-aos="fade-in"
+        class="text-white font-semibold text-2xl md:text-4xl md:leading-tight"
+      >
+        Mis Empleos
+      </h2>
+      <p class="mt-1 text-neutral-400" data-aos="fade-in">
+        {{ jobsDescription }}
+      </p>
+    </div>
+    <!-- End Title -->
+
+    <!-- Grid -->
+    <div
+      class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 lg:items-center"
+    >
+      <div class="space-y-10">
+        <!-- Technologies -->
+        <div class="space-y-6 max-w-3xl mb-10 lg:mb-14">
+          <h4
+            class="text-white font-semibold md:text-2xl md:leading-tight"
+            data-aos="fade-in"
+          >
+            Mis Tecnologias
+          </h4>
+          <p class="mt-1 text-neutral-400" data-aos="fade-in">
+            <strong class="text-white">Angular: </strong> {{ angular }}
+          </p>
+          <p class="mt-1 text-neutral-400" data-aos="fade-in">
+            <strong class="text-white">NodeJS: </strong> {{ nodejs }}
+          </p>
+          <p class="mt-1 text-neutral-400" data-aos="fade-in">
+            <strong class="text-white">SprinBoot: </strong> {{ springBoot }}
+          </p>
+          <p class="mt-1 text-neutral-400" data-aos="fade-in">
+            <strong class="text-white">DevOps: </strong> {{ devOps }}
+          </p>
+          <p class="mt-1 text-neutral-400" data-aos="fade-in">
+            <strong class="text-white">AWS: </strong> {{ aws }}
+          </p>
+          <p class="mt-1 text-neutral-400" data-aos="fade-in">
+            <strong class="text-white">Bases de Datos: </strong> {{ database }}
+          </p>
+          <p class="mt-1 text-neutral-400" data-aos="fade-in">
+            <strong class="text-white">Otros: </strong> {{ others }}
+          </p>
+        </div>
+        <!-- Technologies -->
+      </div>
+
+      <!-- Timeline -->
+      <app-timeline-jobs></app-timeline-jobs>
+      <!-- End Timeline -->
+    </div>
+    <!-- End Grid -->
+  </div>
+</div>

@@ -1,0 +1,40 @@
+/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+@mixin scroller($axisX, $axisY, $color, $track_size) {
+  scroll-behavior: smooth;
+  overflow-y: $axisX !important;
+  overflow-x: $axisY !important;
+
+  //firfox scroll
+  // scrollbar-color: $color #e1ddff !important;
+  scrollbar-width: thin;
+
+  //chrome
+  &::-webkit-scrollbar-track {
+    border-radius: 20px;
+    // background-color: #e1ddff !important;
+  }
+
+  &::-webkit-scrollbar {
+    // background-color: #e1ddff !important;
+    width: $track_size !important;
+    height: $track_size !important;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    width: $track_size !important;
+    // background-color: $color !important;
+  }
+}
+
+.scroller-auto {
+  @include scroller(auto, auto, #9e58ff, 0.6rem);
+}

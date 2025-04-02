@@ -1,0 +1,49 @@
+<div class="bg-neutral-900" id="profile">
+  <div class="max-w-5xl mx-auto px-4 xl:px-0 pt-24 lg:pt-32 pb-24">
+    <div data-aos="fade-in">
+      <div class="flex flex-col items-center md:flex-row">
+        <img
+          class="rounded-full"
+          src="assets/images/profile/jesus-david.webp"
+          width="120"
+          alt=""
+        />
+        <div class="flex flex-col ml-5 justify-center">
+          <h1 class="text-4xl text-center font-medium text-[#ff0] md:text-left">
+            Jesus David Mejia Vergara
+          </h1>
+          <p class="text-md text-center font-bold text-white mt-2 md:text-left">
+            Ingeniero de Sistemas & Full Stack Developer
+          </p>
+          <p class="text-md text-center font-bold text-white mt-2 md:text-left">
+            Especialista en Procesos de Desarrollo de Software
+          </p>
+        </div>
+      </div>
+
+      <p class="mt-5 text-neutral-400 text-lg">
+        {{ presentation }}
+      </p>
+    </div>
+
+    <div class="hidden mt-5 space-x-2 space-y-2 sm:block">
+      @for (technology of technologies; track $index) {
+      <span
+        data-aos="fade-in"
+        class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-yellow-800/30 text-yellow-500"
+        >{{ technology }}</span
+      >
+      }
+    </div>
+
+    <div class="mt-5 space-x-2 space-y-2 sm:hidden">
+      @for (technology of technologiesMobile; track $index) {
+      <span
+        data-aos="fade-in"
+        class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-yellow-800/30 text-yellow-500"
+        >{{ technology }}</span
+      >
+      }
+    </div>
+  </div>
+</div>

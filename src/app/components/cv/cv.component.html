@@ -1,0 +1,39 @@
+<div class="bg-neutral-900" data-aos="fade-in" id="cv">
+  <!-- Approach -->
+  <div class="max-w-5xl px-4 xl:px-0 py-10 lg:pt-20 mx-auto">
+    <!-- Title -->
+    <div class="mb-10 lg:mb-14">
+      <h2
+        data-aos="fade-in"
+        class="text-white font-semibold text-2xl md:text-4xl md:leading-tight"
+      >
+        Hoja de Vida
+      </h2>
+      <p class="mt-1 text-neutral-400" data-aos="fade-in">
+        {{ description }}
+      </p>
+    </div>
+    <!-- End Title -->
+
+    <div class="inline-flex rounded-lg shadow-sm" data-aos="fade-in">
+      <button
+        type="button"
+        (click)="downloadSpanishCV()"
+        class="py-3 px-4 inline-flex items-center gap-x-2 -ms-px first:rounded-s-lg first:ms-0 last:rounded-e-lg text-sm font-medium focus:z-10 border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 focus:outline-none focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800 dark:focus:bg-neutral-800"
+      >
+        Hoja de Vida - Español
+      </button>
+      <button
+        type="button"
+        (click)="downloadEnglishCV()"
+        class="py-3 px-4 inline-flex items-center gap-x-2 -ms-px first:rounded-s-lg first:ms-0 last:rounded-e-lg text-sm font-medium focus:z-10 border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 focus:outline-none focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800 dark:focus:bg-neutral-800"
+      >
+        Hoja de Vida - Ingles
+      </button>
+    </div>
+
+    <!-- <app-table-certifications
+      [certifications]="certifications"
+    ></app-table-certifications> -->
+  </div>
+</div>

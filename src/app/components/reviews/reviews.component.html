@@ -1,0 +1,83 @@
+<div class="bg-neutral-900" id="trajectory">
+  <div class="max-w-5xl px-4 xl:px-0 py-10 lg:py-20 mx-auto">
+    <!-- Title -->
+    <div class="mb-10 lg:mb-14">
+      <h2
+        data-aos="fade-in"
+        class="text-white font-semibold text-2xl md:text-4xl md:leading-tight"
+      >
+        Mi Trayectoria Profesional
+      </h2>
+      <p class="mt-1 text-neutral-400" data-aos="fade-in">
+        A lo largo de mi carrera, he tenido el privilegio de participar en
+        numerosos proyectos que han desafiado mis habilidades y han enriquecido
+        mi experiencia profesional. Desde desarrollos innovadores en el sector
+        tecnológico hasta colaboraciones con empresas de renombre, cada proyecto
+        ha sido una oportunidad para aprender y crecer. A continuación,
+        encontrarás un resumen de mis logros, las empresas con las que he
+        trabajado y otros datos estadísticos que reflejan mi compromiso y
+        dedicación en el campo del desarrollo de software.
+      </p>
+    </div>
+    <!-- End Title -->
+
+    <!-- Skills -->
+    <!-- <ul class="space-y-3 text-sm"> -->
+    <ul class="grid sm:grid-cols-2 gap-4 text-sm mb-10">
+      @for (skill of skills; track $index) {
+      <li class="flex gap-x-3" data-aos="fade-in">
+        <span
+          class="size-5 flex justify-center items-center rounded-full bg-yellow-800/30 text-yellow-500"
+        >
+          <svg
+            class="shrink-0 size-3.5"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <polyline points="20 6 9 17 4 12"></polyline>
+          </svg>
+        </span>
+        <span class="text-white"> {{ skill }} </span>
+      </li>
+      }
+    </ul>
+    <!-- End Skills -->
+
+    <!-- Grid -->
+    <div class="md:grid md:grid-cols-2 md:gap-10 lg:gap-16 md:items-center">
+      <div>
+        <!-- Blockquote -->
+        <blockquote>
+          <p
+            data-aos="fade-in"
+            class="font-medium text-xl text-white md:text-2xl md:leading-normal xl:text-3xl xl:leading-normal"
+          >
+            Transformando ideas en realidades digitales: innovando,
+            desarrollando y perfeccionando soluciones tecnológicas que impulsan
+            el futuro.
+          </p>
+        </blockquote>
+        <!-- End Blockquote -->
+      </div>
+      <!-- End Col -->
+
+      <div class="mt-10 mb-24 md:mb-0 mb:mt-0">
+        <img
+          class="rounded-xl"
+          data-aos="fade-in"
+          src="https://www.simplilearn.com/ice9/free_resources_article_thumb/tester-or-developer-what-suits-you-the-most.jpg"
+          alt="Image Description"
+        />
+      </div>
+      <!-- End Col -->
+    </div>
+    <!-- End Grid -->
+  </div>
+</div>

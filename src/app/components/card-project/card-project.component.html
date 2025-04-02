@@ -1,0 +1,40 @@
+<div
+  *ngIf="project"
+  class="group relative z-10 p-4 md:p-6 h-full flex flex-col bg-neutral-900 first:rounded-t-xl last:rounded-b-xl lg:first:rounded-l-xl lg:first:rounded-tr-none lg:last:rounded-r-xl lg:last:rounded-bl-none before:absolute before:inset-0 before:bg-gradient-to-b before:hover:from-transparent before:hover:via-transparent before:hover:to-[#ff0]/10 before:via-80% before:-z-[1] before:last:rounded-b-xl lg:before:first:rounded-s-xl lg:before:last:rounded-e-xl lg:before:last:rounded-bl-none before:opacity-0 before:hover:opacity-100"
+>
+  <div class="mb-2">
+    <div class="w-full h-80">
+      <img
+        class="rounded w-full h-full min-w-full min-h-full"
+        [src]="project.image"
+        alt=""
+      />
+    </div>
+
+    <div class="mt-5">
+      <h3 class="mt-5 font-medium text-2xl text-white">
+        {{ project.title }}
+      </h3>
+      <p class="mt-1 text-neutral-400">
+        {{ project.description }}
+      </p>
+    </div>
+  </div>
+  <div class="space-x-2 space-y-2 mb-3">
+    @for (technology of project.technologies; track technology) {
+
+    <span
+      class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium bg-white/10 text-white"
+      >{{ technology }}</span
+    >
+
+    }
+  </div>
+  <a class="mt-auto" [href]="project.link.url" target="_blank">
+    <span
+      class="font-medium text-sm text-[#ff0] pb-1 border-b-2 border-neutral-700 group-hover:border-[#ff0] transition focus:outline-none group-focus:border-[#ff0]"
+    >
+      {{ project.link.label }}
+    </span>
+  </a>
+</div>
