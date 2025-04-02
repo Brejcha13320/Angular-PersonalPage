@@ -10,6 +10,7 @@ import {
 import { register } from 'swiper/element/bundle';
 import { IStaticMethods } from 'preline/preline';
 import AOS from 'aos';
+import { Meta } from '@angular/platform-browser';
 
 declare global {
   interface Window {
@@ -25,7 +26,9 @@ declare global {
   styleUrl: './app.component.scss',
 })
 export class AppComponent implements OnInit {
-  constructor(private router: Router, private route: ActivatedRoute) {
+  metaContent = "Desarrollador Full Stack especializado en Angular y Node.js. Explora mis proyectos y experiencia.";
+  constructor(private meta: Meta, private router: Router, private route: ActivatedRoute) {
+    this.meta.updateTag({ name: 'description', content: this.metaContent });
     register();
   }
 
